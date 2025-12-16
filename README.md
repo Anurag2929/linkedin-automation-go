@@ -89,12 +89,14 @@ When executed, the program launches a browser, applies stealth techniques, simul
 Configuration
 The application behavior can be modified using the config.yaml file:
 
+```bash
 browser:
   headless: false
 
 stealth:
   min_think_ms: 800
   max_think_ms: 1500
+```
   
 Demo Video
 A short demo video is provided as part of the submission. It shows program execution, browser automation behavior, logging output, and the generated state file.

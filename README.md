@@ -83,6 +83,7 @@ linkedin-automation-go/
 git clone https://github.com/Anurag2929/linkedin-automation-go.git
 cd linkedin-automation-go
 go run ./cmd
+```
 When executed, the program launches a browser, applies stealth techniques, simulates human-like interaction, logs actions to the console, and saves execution state to state.json.
 
 Configuration
@@ -94,6 +95,7 @@ browser:
 stealth:
   min_think_ms: 800
   max_think_ms: 1500
+  
 Demo Video
 A short demo video is provided as part of the submission. It shows program execution, browser automation behavior, logging output, and the generated state file.
 

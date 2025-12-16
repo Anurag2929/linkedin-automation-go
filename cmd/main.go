@@ -34,6 +34,9 @@ func main() {
 	stealth.Point{X: 600, Y: 420},
 )
 
+stealth.Think(800, 1500)
+stealth.ScrollHumanLike(page)
+
 	log.Println("Browser launched successfully")
 
 	// Simulate human think time

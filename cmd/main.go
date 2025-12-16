@@ -7,6 +7,7 @@ import (
 
 	"github.com/go-rod/rod"
 	"github.com/go-rod/rod/lib/launcher"
+	"linkedin-automation-go/stealth"
 )
 
 func main() {
@@ -27,6 +28,11 @@ func main() {
 	// Open a safe demo page
 	page := browser.MustPage("https://example.com")
 	page.MustWaitLoad()
+	stealth.MoveMouseHumanLike(
+	page,
+	stealth.Point{X: 100, Y: 120},
+	stealth.Point{X: 600, Y: 420},
+)
 
 	log.Println("Browser launched successfully")
 

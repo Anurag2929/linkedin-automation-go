@@ -8,16 +8,21 @@ import (
 	"github.com/go-rod/rod"
 	"github.com/go-rod/rod/lib/launcher"
 	"linkedin-automation-go/stealth"
+	"linkedin-automation-go/config"
 )
 
 func main() {
 	fmt.Println("LinkedIn Automation Proof-of-Concept")
 	fmt.Println("Educational use only")
+	cfg, err := config.LoadConfig("config.yaml")
+    if err != nil {
+	    log.Fatal(err)
+    }
 
 	// Launch browser
 	url := launcher.New().
 	Leakless(false).
-	Headless(false).
+	Headless(cfg.Browser.Headless).
 	MustLaunch()
 
 	browser := rod.New().
@@ -35,7 +40,7 @@ func main() {
 	stealth.Point{X: 600, Y: 420},
 )
 
-stealth.Think(800, 1500)
+stealth.Think(cfg.Stealth.MinThinkMs, cfg.Stealth.MaxThinkMs)
 stealth.ScrollHumanLike(page)
 
 	log.Println("Browser launched successfully")

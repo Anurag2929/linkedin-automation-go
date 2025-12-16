@@ -104,17 +104,12 @@ A short demo video is provided as part of the submission. It shows program execu
 Notes
 This project is intentionally limited to safe demo behavior. No real LinkedIn accounts are used. The goal is to demonstrate technical understanding and problem-solving ability rather than real-world automation.
 
-Author
-K Anurag Gouda
-B.Tech Computer Science
+Author 
+
+K Anurag Gouda  
+B.Tech Computer Science  
 Internship Technical Assignment
+
 
 ---
 
-## Final Step
-Commit it:
-
-```bash
-git add README.md
-git commit -m "Update README with project description and usage instructions"
-git push

@@ -28,6 +28,7 @@ func main() {
 	// Open a safe demo page
 	page := browser.MustPage("https://example.com")
 	page.MustWaitLoad()
+	stealth.ApplyFingerprintMask(page)
 	stealth.MoveMouseHumanLike(
 	page,
 	stealth.Point{X: 100, Y: 120},

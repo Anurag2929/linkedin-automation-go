@@ -70,9 +70,6 @@ linkedin-automation-go/
 ├── go.mod
 └── README.md
 
-yaml
-Copy code
-
 ---
 
 ## How to Run
@@ -91,8 +88,6 @@ When executed, the program launches a browser, applies stealth techniques, simul
 Configuration
 The application behavior can be modified using the config.yaml file:
 
-yaml
-Copy code
 browser:
   headless: false
 
@@ -109,9 +104,6 @@ Author
 K Anurag Gouda
 B.Tech Computer Science
 Internship Technical Assignment
-
-yaml
-Copy code
 
 ---
 
